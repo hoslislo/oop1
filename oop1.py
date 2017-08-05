@@ -56,7 +56,12 @@ quack
 a class is an object, like a template or, e.g., a record; inside the class are methods, which are just functions by another name
 variables defined in a class are available only within the class; a variable might be defined in a class to be used as an attribute
     def __init__(self, name, weight): Python requires "self" as part of the method definition and uses it to assign attributes, etc.
-a = Bear("Oski", 180) creates an instance of the object, i.e., a is instantiated; in the print, a is not the same as b; they are different instances of the object
+a = Bear("Oski", 180) creates an instance of the object, i.e., a is instantiated; in the print, a is not the same as b; they are 
+different instances of the object
 __init__ is a method that initializes the instance of the object
+with __init__, the instantiation can include attributes, e.g., x = Person("Tom", 160) calling class Person/
+def def __init__(self, name, weight): 
+whereas another class (class Dosomething) without attributes might just instantiate an object 
+when called by y = Dosomething()
 advantages of classes are reusability, easier to maintain, etc., etc.
 '''
